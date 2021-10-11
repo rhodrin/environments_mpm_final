@@ -16,8 +16,8 @@ def smooth_image(a, sigma=1):
 def my_mat_solve(A, b):
     return A.inv()*b
 
-def my_concat(A, B, C=None)
-    if C:
+def my_concat(A, B, C=None):
+    try:
         return pd.concat([A, B, C])
-    else:
+    except TypeError:
         return pd.concat([A, B])

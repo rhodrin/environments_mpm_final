@@ -24,7 +24,7 @@ df2 = pd.DataFrame(
     index=[4, 5, 6, 7],
 )
 
-df12 = my_concat(A, B)
+df12 = my_concat(df1, df2)
 
 print(df12)
 
